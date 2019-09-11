@@ -1,0 +1,674 @@
+@font-face {
+  font-family: "Roboto_black";
+  src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "Roboto_black_italic";
+  src: url(fonts/Roboto-BlackItalic.ttf);
+}
+@font-face {
+  font-family: "Roboto_bold";
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto_bold_italic";
+  src: url(fonts/Roboto-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "Roboto_italic";
+  src: url(fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: "Roboto_medium";
+  src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto_medium_italic";
+  src: url(fonts/Roboto-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "Roboto_regular";
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto_light";
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto_light_italic";
+  src: url(fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+  font-family: "Roboto_thin";
+  src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Roboto_thin_italic";
+  src: url(fonts/Roboto-ThinItalic.ttf);
+}
+body {
+  font-family: "Roboto_medium",Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/*partie01*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  height: 80px;
+  z-index: 1; 
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.menu_header a {
+  text-decoration: none;
+  color: rgb(118, 118, 118);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu_header ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 30px;    
+} 
+
+nav a {
+  padding: 28px 10px 30px 10px;
+  border-top: 3px solid transparent; 
+}
+
+nav a:hover {
+  border-top-color: rgb(92, 173, 211);
+}
+
+.banniere {
+  width: 100%;
+  position: relative;
+  padding-top: 80px; 
+}
+
+.banniere img {
+  width: 100%;
+  height: 450px;
+}
+
+.elements_banniere {
+  width: 100%;
+  position: absolute;
+  bottom: 30%;
+}
+
+.fas.fa-chevron-left , .fas.fa-chevron-right {
+  color: white;
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.fas.fa-chevron-right {
+  margin-left: 12px;
+}
+
+.fas.fas.fa-chevron-left {
+  margin-left: 6px;
+}
+
+.arrow_left , .arrow_right {
+  height: 60px;
+  width: 30px;  
+  background-color: rgb(64, 65, 69);
+  position: absolute;
+  bottom: 35%; 
+           
+}
+
+.arrow_left {
+  border-top-right-radius: 100px; 
+  border-bottom-right-radius: 100px;
+  left: 0%;   
+}
+
+.arrow_right {  
+  border-top-left-radius: 100px; 
+  border-bottom-left-radius: 100px; 
+  right: 0%;
+}
+
+.arrow_left:hover .fas, .arrow_right:hover .fas {
+  color: rgb(172, 172, 161);
+}
+
+.nom_banniere {
+  color: rgb(92, 173, 211); 
+}
+
+.elements_banniere p, h1 {
+  color: rgb(255, 255, 255); 
+  padding-left: 15%;         
+}
+
+.ligne-sous_banniere {
+  width: 150px;
+  border-bottom: solid rgb(62, 128, 185) 5px;
+  position: absolute;
+  bottom: 4px;
+}
+
+.bouton_banniere {
+  text-decoration: none;
+  background-color: rgb(78, 177,213);
+  color: white;
+  border-radius: 4px;
+  border-bottom: solid 3px rgb(68, 148, 187); 
+  text-align: center;
+  display: block;
+  width: 100px;
+  height: 20px;
+  padding-top: 5px; 
+  margin-left: 15%;
+}
+
+/*partie02*/
+#nos_services, #nos_projets {
+  padding-top: 80px;
+  width: 100%;
+} 
+
+.titre_pages {
+  text-align: center;
+}
+
+.titre_pages h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.puce {
+  display: flex;
+  justify-content: center;
+}
+
+.line_right , .line_left {
+  border-top: solid 2px rgb(238, 238, 238); 
+  width: 60px; 
+  margin: 5px
+}
+
+.fas.fa-circle {
+  color: rgb(92, 173, 211);
+}
+
+body p {
+  line-height: 25px;
+  font-size: 14px; 
+  color: rgb(58, 58, 58);
+}
+
+.services_contener {
+  display: flex;
+}
+
+.services_image img {
+  width: 90%;
+  margin-left: 100px;
+  padding-top: 20px;
+}
+
+.services_listes {
+  margin-top: 110px;
+  margin-left: 90px;
+}
+
+.contener_liste {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text_services {
+  min-height: 120px;
+  width: 100%;
+  margin-left: 20px;
+  line-height: 0;
+}
+
+.logo_services {
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 50px;
+  width: 26px;
+  height: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.cercle {
+  font-size: 14px;
+  position: absolute;
+  left: 90%;
+  top: 40%;
+} 
+
+.fas.fa-chart-line , .fas.fa-chart-pie , .fas.fa-cubes {
+  color: rgb(92, 173, 211);
+  font-size: 26px;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+
+/*PARTIE 03*/
+#nos_projets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.menu_nos-projet ul {
+  display: flex;
+  list-style-type: none;
+  cursor: pointer;     
+}
+
+.menu_nos-projet li {
+  background-color: rgb(229, 229, 229);
+  height: 35px;
+  width: 90px;
+  padding-top: 15px;
+  padding-left: 15px;
+  border-bottom: solid 3px transparent; 
+  text-align: center;
+  position: relative;
+}
+
+.menu_nos-projet li:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.menu_nos-projet li:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.menu_nos-projet a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+
+.menu_nos-projet li:hover a {
+  color: white;   
+}
+
+.menu_nos-projet li:hover {
+  background-color: rgb(92, 173, 211);
+  border-bottom-color: rgb(70, 140, 174);  
+}
+
+.fas.fa-caret-down {
+  font-size: 22px;
+  color: rgb(70, 140, 174);
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  display: none;
+}
+
+.menu_nos-projet li:hover .fa-caret-down {
+  display: block;
+}
+
+.figure_nos-projet {
+  display: flex; 
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-top: 40px;
+  margin: 0;
+}
+
+figure {
+  width: 280px;
+  height: 200px;
+  padding: 0;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(44, 43, 43, 0.4);
+  width: 260px;
+  height: 72px;
+  padding-left: 20px;
+  padding-top: 10px;
+  display: none;
+}
+
+figure:hover figcaption {
+  display: block;
+}
+
+figure img {
+  width: 100%;
+  height: 200px;
+}
+
+figcaption h3 , figcaption p {
+  color: white;
+  margin: 0;
+}
+
+.eye {
+  width: 30px;
+  height: 30px;
+  border: 2px white solid;
+  background-color: rgb(75, 156, 177);
+  border-radius: 30px;
+  position: relative;
+  bottom: 65px;
+  left: 215px;
+  text-align: center;
+}
+
+.fas.fa-eye {
+  padding-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+/*PARTIE 04*/
+#nous_contacter {
+  padding-top: 40px;
+  height: 800px;
+  position: relative;  
+}
+
+.maps {
+  background-color:rgb(70, 152, 228);
+  width: 100%;
+  height: 750px; 
+}
+
+iframe {
+  opacity: 0.6;
+  width: 100%;
+  height: 750px;  
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(242,246,248,0.9);
+  opacity: 0.9;
+  width: auto;
+  padding: 5px 0 10px 20px;
+  position: absolute;
+  left: 60%;
+  bottom: 22%;
+}
+
+input , textarea {
+  font-family: "Roboto_medium";
+  width: 90%;
+  height: 30px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border: 1px rgb(179, 181, 183) solid;
+  border-radius: 4px; 
+}
+
+textarea { 
+  height: 100px;
+  padding-top: 8px;
+}
+
+.submit {
+  background-color: rgb(92, 173, 211);
+  color: rgb(255, 255, 255);
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  border-bottom: solid 3px rgb(68, 148, 187);
+  cursor: pointer;
+}
+
+/*responsive design*/
+/*ecran intermediaire*/
+@media (max-width: 1280px) {
+  .logo img {
+    width: 200px;
+    margin-top: 15px;
+  }
+}
+/*tablettes portrait*/
+@media (max-width: 970px) {
+  body p {
+    font-size: 16px;
+  }
+
+  body h3 {
+    font-size: 24px;
+  }
+
+  .titre_pages h2 {
+    font-size: 28px;
+  }
+
+  .logo img {
+    width: 150px;
+    margin-left: 20px;
+  }
+
+  .banniere img {
+    height: 320px;
+  }
+
+  h1 
+  {
+    font-size: 26px;
+  }
+
+  .menu_header a {
+    font-size: 12px;
+  }
+
+  .menu_header ul {
+    margin-right: 60px;
+  }
+
+  .arrow_left , .arrow_right{
+    bottom: 32%;
+  }
+
+  .services_contener {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services_image {
+    width: auto;
+  }
+
+  .services_image img {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+  }
+
+  .services_listes {
+    padding-top: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text_services {
+    margin-top: 35px;
+    width: auto;
+  }
+
+  .contener_liste {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .logo_services {
+    position: absolute;
+    left: 48%;
+    bottom: 120px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .figure_nos-projet {
+    width: auto;
+    justify-content: center;
+  } 
+}
+
+/*mobile*/
+@media (max-width: 480px) {
+  body p {
+    font-size: 14px;
+  }
+
+  body h3 {
+    font-size: 22px;
+  }
+
+  #nos_services, #nos_projets {
+    padding-top: 60px;
+  }
+
+  .logo  {
+    overflow: hidden;
+    margin-left: 10px;
+    padding-left: 0;
+  }
+
+  .logo img {
+    width: 120px; 
+  }
+
+  .menu_header ul {
+    text-align: center;
+    margin-right: 0px;
+    padding-left: 0;
+  }
+
+  .menu_header a { 
+    padding: 10px;
+  }
+
+  .banniere {
+    text-align: center;
+  }
+
+  .elements_banniere {
+    height: 170px;
+    padding: 0;
+    position: relative;
+    background-color: rgb(192, 186, 186);
+    margin: auto;
+  }
+
+  .elements_banniere h1 {
+    margin: auto;
+    padding: 10px 0 0 0;
+    font-size: 22px;
+  }
+
+  .elements_banniere p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .banniere img {
+    height: 250px;  
+  }
+
+  .arrow_left , .arrow_right{
+    display: none;
+  }
+
+  .bouton_banniere {
+    margin: auto;
+  }
+
+  .ligne-sous_banniere {
+    bottom: 170px;
+    width: 100%;
+  }
+  .titre_pages {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .titre_pages h2 {
+    font-size: 26px;
+  }
+
+  .menu_nos-projet {
+    justify-content: center;
+    width: 80%;
+  }
+
+  .menu_nos-projet ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu_nos-projet li {
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 10px; 
+    font-size: 14px;
+    width: auto;
+  }
+
+  .logo_services {
+    left: 46%;
+  }
+
+  .menu_nos-projet li:hover .fa-caret-down {
+    display: none;
+  }
+
+  .figure_nos-projet {
+    padding: 0;
+  }
+
+  figure {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .formulaire {
+    position: static;
+    left: 0%;
+    bottom: 0%;
+    width: auto;
+  }
+
+  .maps {
+    height: 400px;
+  }
+
+  iframe {
+    height: 400px;
+  }
+}

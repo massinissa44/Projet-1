@@ -238,7 +238,7 @@ body p {
   line-height: 0;
 }
 
-.logo_services {
+.icone_services {
   border: 1px solid rgb(210, 210, 210);
   border-radius: 50px;
   width: 26px;
@@ -522,7 +522,7 @@ textarea {
     position: relative;
   }
 
-  .logo_services {
+  .icone_services {
     position: absolute;
     left: 48%;
     bottom: 120px;
@@ -639,7 +639,7 @@ textarea {
     width: auto;
   }
 
-  .logo_services {
+  .icone_services {
     left: 46%;
   }
 

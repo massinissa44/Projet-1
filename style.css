@@ -68,23 +68,20 @@ header {
   margin-top: 10px;
 }
 
-.menu_header a {
-  text-decoration: none;
-  color: rgb(118, 118, 118);
-  font-size: 14px;
-  font-weight: bold;
-}
-
 .menu_header ul {
   list-style-type: none;
   display: flex;
   margin-top: 30px;    
-} 
+}
 
 nav a {
+  text-decoration: none;
+  color: rgb(118, 118, 118);
+  font-size: 14px;
+  font-weight: bold;
   padding: 28px 10px 30px 10px;
-  border-top: 3px solid transparent; 
-}
+  border-top: 3px solid transparent;
+} 
 
 nav a:hover {
   border-top-color: rgb(92, 173, 211);

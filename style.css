@@ -90,7 +90,7 @@ nav a:hover {
 .banniere {
   width: 100%;
   position: relative;
-  padding-top: 80px; 
+  padding-top: 80px;  
 }
 
 .banniere img {
@@ -442,13 +442,25 @@ textarea {
 }
 
 /*responsive design*/
+@media (min-width: 2000px) {
+  .services_contener {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .banniere img {
+    height: 550px;
+  }
+}
+
 /*ecran intermediaire*/
 @media (max-width: 1280px) {
-  .logo img {
+  .logog {
     width: 200px;
     margin-top: 15px;
   }
 }
+
 /*tablettes portrait*/
 @media (max-width: 970px) {
   body p {

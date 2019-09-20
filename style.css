@@ -651,10 +651,6 @@ textarea {
     margin: 0;  
   }
 
-  .icone_services {
-    
-  }
-
   .menu_nos-projet li:hover .fa-caret-down {
     display: none;
   }
